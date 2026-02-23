@@ -20,7 +20,7 @@ From: earthquakesuc/workflow-bootstrap:latest
     . /sw/venv/bin/activate
     # Python dependencies
 
-    /sw/uv/uv pip install "git+https://github.com/ucgmsim/workflow@im_calc_rust" --no-binary=h5py
+    /sw/uv/uv pip install "git+https://github.com/ucgmsim/workflow@pegasus" --no-binary=h5py
 
     chmod -R a+rX /sw
 
