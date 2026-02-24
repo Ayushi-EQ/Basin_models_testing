@@ -23,7 +23,7 @@
       """
 
 {% set events = load_json('events.json') %}
-{% set version = "DB2025" %}
+{% set version = "Paper2_withbasin_runs" %}
 
 [task parameters]
       event = {{ events | join(', ') }}
