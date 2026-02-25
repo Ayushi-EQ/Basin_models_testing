@@ -40,6 +40,7 @@
         estimate<event>:large? => emod3d_large<event>
         estimate<event>:x_large? => emod3d_x_large<event>
         emod3d_small<event> | emod3d_medium<event> | emod3d_large<event> | emod3d_x_large<event> => lf_to_xarray<event> => cleanup_emod3d<event>
+        cleanup_emod3d<event-10> => generate_velocity_model<event>
         lf_to_xarray<event> => bb_sim<event> => im_calc<event> & select_subset<event> => upload_results<event>
         generate_station_coordinates<event> => create_e3d_par<event>
         generate_station_coordinates<event> => hf_sim<event> => bb_sim<event>
